@@ -1,16 +1,15 @@
 <div class="container-fluid px-4">
-                        <h1 class="mt-4">Categories</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Categories</li>
-                        </ol>
-                        
-                        <a href="?page=categories_tambah" class="btn btn-primary">+ tambah Data</a>
-                        <hr>
-               <table class="table table-bordered">
-                <tr>
+    <h1 class="mt-4">Category</h1>  
+    <ol class="breadcrumb mb-4">
+     <li class="breadcrumb-item active">category</li>
+    </ol>   
+        <a href="?page=categories_tambah" class="btn btn-primary">+ tambah Data</a>
+
+            <table class="table table-bordered mt-2">
+                <tr class="bg-info">
+                    <th>ID</th>
                     <th>Categories</th>
-                    <th>id</th>
-                    <th>user id</th>
+                    <th>User_ID</th>
                     <th>Aksi</th>
                 </tr>
 
@@ -20,12 +19,11 @@
 
                         ?>
                         <tr>
-                            <td><?php echo $data['category']; ?></td>
                             <td><?php echo $data['id']; ?></td>
+                            <td><?php echo $data['category']; ?></td>
                             <td><?php echo $data['user_id']; ?></td>
                             <td>
-                                <a href="?page=categories_ubah&&id=<?php echo $data['categories']; ?>" class="btn btn-primary">Ubah</a>
-                                <a href="?page=pelanggan_hapus&&id=<?php echo $data['categories']; ?>" class="btn btn-danger">Hapus</a>
+                                <a href="?page=categories_hapus&&id=<?php echo $data['user_id']; ?>" class="btn btn-secondary">Hapus</a>
                             </td>
                         </tr>
                         <?php
@@ -33,5 +31,5 @@
                     
                 ?>
 
-               </table>
+            </table>
   </div>

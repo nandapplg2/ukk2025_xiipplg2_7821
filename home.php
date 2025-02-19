@@ -8,7 +8,7 @@
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body"><?php echo mysqli_num_rows(mysqli_query($koneksi, "SELECT*FROM categories")); ?>Categories</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a class="small text-white stretched-link" href="?page=categories">View Details</a>
                                         <div class="small text-dark"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>

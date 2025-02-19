@@ -57,13 +57,13 @@ include "koneksi.php";
                                                 <input class="form-control" id="inputPassword" required name="password" type="password" placeholder="Masukkan Password" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
-                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-5">
                                                 <button class="btn btn-primary" type="submit" name="register" value="register">Register</button>
                                                 <a class="btn btn-danger" href="login.php">Login</a>
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="card-footer text-center py-3 bg-secondary">
+                                    <div class="card-footer text-center py-2 lightblue">
                                         <div class="small"><a href="register.html">
                                             &copy; TO DO LIST 2025 
                                         </a></div>
